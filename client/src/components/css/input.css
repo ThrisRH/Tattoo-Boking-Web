@@ -1,0 +1,17 @@
+.custom-select {
+    appearance: none;
+}
+
+/* DatePicker */
+
+.DatePicker-Container .react-datepicker-wrapper, .DatePicker-Container .react-datepicker__input-container input{
+    width: 100%;
+}
+
+.DatePicker-Container ul li{
+    color: #1c1c1c;
+}
+
+.react-datepicker__time-list-item--disabled{
+    display: none;
+}

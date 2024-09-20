@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
-
+import Home from "./components/pages/Home/home";
+import { BrowserRouter as Router } from "react-router-dom";
 const App = () => {
-  const [backendData, setBackendData] = useState([{}]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api")
-      .then((response) => response.json())
-      .then((data) => {
-        setBackendData(data);
-      });
-  }, []);
-
-  return <div></div>;
+  return (
+    <Router>
+      <div style={{ backgroundColor: "#1c1c1c" }}>
+        <Home />
+      </div>
+    </Router>
+  );
 };
 
 export default App;
